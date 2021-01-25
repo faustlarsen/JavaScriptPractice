@@ -1,0 +1,13 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex; 
+  flex-direction: column;  /*if flex-column then align-items: center - will be horizontally. if flex - row, then vertically*/
+  justify-content: center;
+  height: 100vh; /* center page   */
+  overflow: hidden;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
