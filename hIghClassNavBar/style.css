@@ -1,0 +1,101 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  font: 16px 'Gentium Basic', serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* 100% */
+  height: 100%;
+  border-bottom: 1px solid black;
+}
+
+.navbar * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .main {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid black;
+}
+.navbar .main .logo {
+  width: 50px;
+  height: 50px;
+  background-image: url("logo.jpg");/*logo*/
+  background-size: 70% auto;
+}
+
+.navbar .main .option {
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbar .main a {
+  flex: 0 1 auto;
+}
+
+.navbar .main a.amenu {
+  order: 2;
+  align-self: flex-end;
+}
+
+.navbar .main .current {
+  flex: 3 1 auto;
+  font-size: 2em;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.navbar .main .menu {
+  background-image: url("http://quintaradiscovery.com/wp-content/themes/clean-retina-pro/images/responsive-menu-bg.png");
+  background-size: 40% 40%;
+}
+
+.navbar .main .search {
+  background-image: url("search.png");/*Search*/
+  background-size: 45% auto;
+}
+
+/* Sub Navigation Bar */
+
+.navbar .subnav {
+  display: block;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}
+
+.navbar .subnav .sub {
+  display: none;
+  height: 100%;
+}
+
+.navbar .subnav .sub .suboption {
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+.navbar .subnav .sub .subinput {
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+.navbar .subnav .sub .suboption[next] {
+  background-color: yellow;
+}
+
+.navbar .subnav .current  {
+  display: block;
+}
